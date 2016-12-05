@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="36">
+ <tileset firstgid="1" name="area01_level_tiles" tilewidth="32" tileheight="32" tilecount="140" columns="20">
+  <image source="../../../../boilerplate-master/data/img/map/area01_level_tiles.png" width="640" height="241"/>
+ </tileset>
+ <imagelayer name="background 1">
+  <image source="../img/area01_bkg0.png" width="640" height="480"/>
+  <properties>
+   <property name="ratio" type="float" value="0.25"/>
+  </properties>
+ </imagelayer>
+ <imagelayer name="background 2">
+  <image source="../img/area01_bkg1.png" width="327" height="480"/>
+  <properties>
+   <property name="ratio" type="float" value="0.35"/>
+  </properties>
+ </imagelayer>
+ <layer name="Tile Layer 1" width="20" height="15">
+  <data encoding="base64">
+   GAAAAAgAAAAIAAAACAAAAAgAAAAIAAAACAAAAAgAAAAIAAAALQAAAA4AAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAYAAAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAABAAAAAQAAABgAAAAiAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA2AAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAGAAAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAABAAAAAUAAAABAAAAAQAAAAEAAAAYAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAAsAAAALQAAAAEAAAABAAAAAQAAABgAAAACAAAAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABoAAAArAAAAKwAAACoAAAArAAAAPgAAABYAAAAAAAAAAAAAAAAAAAAAAAAALAAAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAKQAAAAgAAAAIAAAACAAAAAgAAAAtAAAAAAAAAAAAAAAEAAAABQAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAQAAAAFAAAAAAAAABgAAAAZAAAADgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACwAAAAtAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAALAAAAC0AAAAAAAAAGAAAABkAAAAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGQAAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAZAAAACgAAAAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAKwAAACoAAAArAAAAFgAAABcAAAArAAAAGAAAABkAAAAeAAAAHwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXAAAAKgAAACsAAAArAAAAAwAAAAMAAAArAAAAKwAAAAMAAAAYAAAAGgAAACsAAAArAAAAKgAAACsAAAACAAAAKwAAACoAAAArAAAAFgAAAAAAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAABgAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAArAAAAKwAAAAMAAAADAAAAAwAAACkAAAADAAAAAwAAAAMAAAADAAAA
+  </data>
+ </layer>
+ <objectgroup name="mainPlayer">
+  <object id="4" name="mainPlayer" x="139" y="126" width="32" height="64">
+   <properties>
+    <property name="frameheight" type="int" value="0"/>
+    <property name="framewidth" type="int" value="64"/>
+    <property name="image" value="gripe_run_right"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="collision Layer1">
+  <object id="6" x="0" y="193" width="225" height="60"/>
+  <object id="7" x="63" y="353" width="66" height="63"/>
+  <object id="8" x="0" y="253" width="63" height="227"/>
+  <object id="9" x="129" y="415" width="192" height="64"/>
+  <object id="10" x="322" y="448" width="61" height="32"/>
+  <object id="11" x="384" y="385" width="66" height="95"/>
+  <object id="12" x="448" y="353" width="96" height="80"/>
+  <object id="13" x="544" y="385" width="63" height="47"/>
+  <object id="14" x="608" y="353" width="30" height="70"/>
+  <object id="16" x="354" y="0" width="284" height="159"/>
+  <object id="18" x="1" y="1" width="351" height="30"/>
+  <object id="19" x="1" y="32" width="1" height="159"/>
+  <object id="20" x="2" y="33" width="30" height="159"/>
+  <object id="21" x="33" y="161" width="30" height="31"/>
+ </objectgroup>
+ <objectgroup name="coins">
+  <object id="22" name="CoinEntity" x="300" y="180" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="26" name="CoinEntity" x="400" y="120" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="27" name="CoinEntity" x="79" y="300" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="28" name="CoinEntity" x="460" y="300" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="29" name="CoinEntity" x="560" y="180" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+  <object id="30" name="CoinEntity" x="500" y="50" width="32" height="32">
+   <properties>
+    <property name="framewidth" type="int" value="32"/>
+    <property name="image" value="spinning_coin_gold"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Enemies">
+  <object id="32" name="enemyEntity" x="130" y="384" width="180" height="30">
+   <properties>
+    <property name="framewidth" type="int" value="64"/>
+    <property name="image" value="wheelie_right"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
